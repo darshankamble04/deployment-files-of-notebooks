@@ -27,7 +27,7 @@ function Register() {
         if (credentials.password === credentials.cpassword) {
             try {
                 
-                const response = await fetch(`${webUrl}/api/auth/createuser`, {
+                const response = await fetch(`/api/auth/createuser`, {
                     method: 'POST',
                     headers: {
                     'Content-Type': 'application/json',

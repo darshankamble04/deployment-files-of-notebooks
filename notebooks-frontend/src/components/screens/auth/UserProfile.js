@@ -10,7 +10,7 @@ function UserProfile() {
 
     const getUser = async () => {
         try{
-        const response = await fetch(`${webUrl}/api/auth/getuser`, {
+        const response = await fetch(`/api/auth/getuser`, {
 
           method: 'POST',
           headers: {

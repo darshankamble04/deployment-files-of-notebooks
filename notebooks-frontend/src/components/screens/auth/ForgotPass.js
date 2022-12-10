@@ -25,7 +25,7 @@ function ForgotPass() {
             
             // setCredentials({email:credentials.email,password:credentials.password})
             
-            const response = await fetch(`${webUrl}/api/auth/forgotpassword`, {
+            const response = await fetch(`/api/auth/forgotpassword`, {
                 // const response = await fetch(`/api/auth/forgotpassword`, {
                 method: 'POST',
                 headers: {

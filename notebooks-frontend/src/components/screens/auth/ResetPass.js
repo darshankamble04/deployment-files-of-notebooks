@@ -22,7 +22,7 @@ function ResetPass() {
         setLoading(true)
         // setCredentials({email:credentials.email,password:credentials.password})
             try {
-                const response = await fetch(`${webUrl}/api/auth/resetpassword`, {
+                const response = await fetch(`/api/auth/resetpassword`, {
                     // const response = await fetch(`/api/auth/resetpassword`, {
                 method: 'POST',
                 headers: {

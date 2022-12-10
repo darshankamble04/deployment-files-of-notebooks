@@ -22,7 +22,7 @@ const { setLoading} = Context;
         try {
             
             setLoading(true)
-            const response = await fetch(`${webUrl}/api/notes/fetchusernotes`, {
+            const response = await fetch(`/api/notes/fetchusernotes`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const { setLoading} = Context;
             let pathname = window.location.pathname;
         pathname = pathname.split('/')
         
-        const response = await fetch(`${webUrl}/api/notes/${pathname[2]}/fetchallnotes`, {
+        const response = await fetch(`/api/notes/${pathname[2]}/fetchallnotes`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const { setLoading} = Context;
         pathname = pathname.split('/')
         let date = new Date()
         // API
-        await fetch(`${webUrl}/api/notes/${pathname[2]}/addnote`, {
+        await fetch(`/api/notes/${pathname[2]}/addnote`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ const { setLoading} = Context;
         try {
             
             // API
-            await fetch(`${webUrl}/api/notes/deletenote/${id}`, {
+            await fetch(`/api/notes/deletenote/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -145,7 +145,7 @@ const { setLoading} = Context;
         try {
             
             // API
-            await fetch(`${webUrl}/api/notes/updatenote/${id}`, {
+            await fetch(`/api/notes/updatenote/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -175,7 +175,7 @@ const { setLoading} = Context;
         try {
             
             setLoading(true)
-            const response = await fetch(`${webUrl}/api/notes/sharenote/${id}`, {
+            const response = await fetch(`/api/notes/sharenote/${id}`, {
             // const response = await fetch(`/api/auth/forgotpassword`, {
             method: 'POST',
             headers: {

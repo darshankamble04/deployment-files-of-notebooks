@@ -15,7 +15,7 @@ const NotebookState = (props) => {
   const getNotebooks = async () => {
     try {
       setLoading(true)
-      const response = await fetch(`${webUrl}/api/notebooks/fetchallnotebooks`, {
+      const response = await fetch(`api/notebooks/fetchallnotebooks`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const NotebookState = (props) => {
     try {
 
       setLoading(true)
-      const response = await fetch(`${webUrl}/api/notebooks/bookmarkednotebooks/:id`, {
+      const response = await fetch(`api/notebooks/bookmarkednotebooks/:id`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const NotebookState = (props) => {
     try {
 
       // API
-      const response = await fetch(`${webUrl}/api/notebooks/addnotebooks`, {
+      const response = await fetch(`api/notebooks/addnotebooks`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ const NotebookState = (props) => {
     try {
 
       // API
-      await fetch(`${webUrl}/api/notebooks/updatenotebook/${id}`, {
+      await fetch(`api/notebooks/updatenotebook/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ const NotebookState = (props) => {
     try {
 
       // API
-      await fetch(`${webUrl}/api/notebooks/addbookmark/${id}`, {
+      await fetch(`api/notebooks/addbookmark/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -167,7 +167,7 @@ const NotebookState = (props) => {
     try {
 
       // API
-      await fetch(`${webUrl}/api/notebooks/removebookmark/${id}`, {
+      await fetch(`api/notebooks/removebookmark/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -205,7 +205,7 @@ const NotebookState = (props) => {
     try {
 
       // API
-      await fetch(`${webUrl}/api/notebooks/deletenotebook/${id}`, {
+      await fetch(`api/notebooks/deletenotebook/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
