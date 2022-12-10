@@ -1,0 +1,355 @@
+.outlineC {
+    background-color: rgb(228 228 228);
+    position: relative;
+    border: 3.5px dashed #000;
+    width: 178px !important;
+    border-left-style: solid;
+    height: 243px !important;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 0px 13px 13px 0px;
+}
+
+.outlineC:hover {
+    filter: drop-shadow(2px 4px 6px rgb(99, 99, 99));
+    box-shadow: 3px 3px 3px 1px rgb(131 131 131);
+    transition: all 0.4s ease-out;
+    transition-property: all;
+    bottom: 1.5px;
+    /* opacity: 1; */
+}
+
+.outlineC .dotsC {
+    border-right: 3px dotted #000 !important;
+    width: 2px;
+    height: 100%;
+    position: relative;
+    left: 8px;
+}
+
+.outlineC .center {
+    position: relative;
+    bottom: 136px;
+    left: -8px;
+    text-align: center;
+}
+
+.outlineC .menuC {
+    top: 0px;
+    padding-top: 10px;
+    right: 1px;
+    height: 40%;
+    /* background: linear-gradient( 90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.71) 49%, rgba(0, 0, 0, 0.74) 100%); */
+    /* filter: blur(0.5); */
+    border-radius: 0px 12px 0px 0px;
+}
+
+.spiralC {
+    z-index: 9;
+    width: 12%;
+    height: 246px !important;
+    float: left;
+    position: relative;
+    left: -9px;
+}
+
+.canvasC .offcanvas-header {
+    background-color: var(--main-bg-color);
+    height: 56px;
+    color: #fff;
+}
+
+.coverImgs {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: 2px 2px 0 2px;
+    /* z-index: unset; */
+    /* padding: 0rem 0.3rem !important; */
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.coverImgs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
+    height: 11px;
+    box-shadow: inset -6px 7px 6px 0px white;
+    z-index: 10;
+}
+
+.coverImgs::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 37px;
+    box-shadow: inset -2px -14px 13px 0px rgb(255 255 255);
+}
+
+.selectedImg {
+    width: 43% !important;
+    background: url(https://c0.wallpaperflare.com/preview/76/943/601/4k-wallpaper-architecture-background-black.jpg);
+}
+
+.coverImg {
+    width: 90%;
+    height: 22vh;
+    margin: 7px 0 10px 0;
+    background: url(https://c0.wallpaperflare.com/preview/76/943/601/4k-wallpaper-architecture-background-black.jpg);
+    background-size: cover !important;
+    border-radius: 5px;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(121, 121, 121);
+    /* z-index: -1; */
+}
+
+.addAfter {
+    border: 5px solid rgb(38 42 46) !important;
+    filter: drop-shadow(2px 4px 6px black);
+    box-shadow: inset 0px 0px 20px 20px rgb(0 0 0 / 45%);
+}
+
+.addAfter::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    /* bottom: 0; */
+    height: 66px;
+    background: red;
+    background: url(../../../../assets/img/check-alt.svg);
+    background-size: 66px;
+    background-repeat: no-repeat;
+    /* margin: 33px 13px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .coverImg:focus {
+    filter: brightness(0.3);
+    border-color: #a3a3a3 !important;
+    box-shadow: 0 0 0 0.25rem #00000091 !important;
+} */
+
+
+/*  */
+
+.canvasC .offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*  */
+    /* padding: 1rem 1rem 0 1rem; */
+    padding: 0.8rem 1rem 0.3rem 1rem !important;
+    background-color: rgb(17 19 21);
+    color: #fff;
+    margin-bottom: 0rem;
+}
+
+.canvasC .offcanvas {
+    height: 100%;
+    min-width: 455px;
+    width: 28.68vw !important;
+    transition-duration: 0.3s;
+}
+
+.canvasC .offcanvas-body {
+    overflow: hidden;
+}
+
+.canvasC .closeBtn {
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    bottom: 4px;
+    font-size: 1.8rem;
+}
+
+.addNotebookbtn {
+    outline: none;
+    width: fit-content;
+    color: antiquewhite;
+    /* background-color: rgb(118 118 118) !important; */
+    background-color: rgb(17 19 21) !important;
+    border: 1px solid #5e5e5e;
+    padding: .45rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+    margin-top: 5px!important;
+}
+
+.addNotebookbtn:hover {
+    color: antiquewhite;
+    /* background-color: rgb(85, 85, 85) !important; */
+    background-color: rgb(17 19 21) !important;
+}
+
+.addNotebookbtn:focus {
+    border-color: #a3a3a3 !important;
+    box-shadow: 0 0 0 0.25rem rgb(48 48 48 / 25%) !important;
+}
+
+.form-control:focus {
+    border-color: #a3a3a3 !important;
+    box-shadow: 0 0 0 0.25rem rgb(48 48 48 / 25%) !important;
+}
+
+.addNotebook {
+    margin-left: 10px;
+    font-size: 2.2rem;
+    position: relative;
+    top: -4px;
+    /*  */
+    /* color: #c6c7c6; */
+    color: #ecb600;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.addNotebook:hover {
+    font-size: 2.4rem;
+    color: #000000;
+}
+
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    z-index: unset !important;
+    /* If you want dots under the hoverable text */
+}
+
+.pageHeader .tooltip,
+.cNavbar .tooltip {
+    opacity: 1;
+    /* If you want dots under the hoverable text */
+}
+
+.cNavbar .tooltiptext2 {
+    padding: 4px 6px !important;
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: #ffffff52;
+    color: #262a2e;
+    text-align: center;
+    padding: 6px 6px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0.9rem;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: #cfcfcfa4;
+    color: #000000;
+    text-align: center;
+    padding: 9px 9px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0.9rem;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    /* top: -5px; */
+    right: 105%;
+}
+
+.tooltip .tooltiptext2 {
+    /* top: -5px; */
+    left: 105%;
+}
+
+.box-btn2 {
+    position: relative;
+    top: -204%;
+    left: 7%;
+    color: #fff;
+    background-color: #262a2e;
+    border-color: #212529;
+}
+
+
+/* IMG UPLOADER :; */
+
+
+/* 
+#imageForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+#imageForm>* {
+    margin: 5px 0;
+    box-sizing: border-box;
+} */
+
+.imgUploderBox {
+    background: none;
+    overflow: hidden;
+    /*  */
+    width: 90%;
+    height: 22vh;
+    margin: 7px 0 10px 0;
+    background-size: cover !important;
+    border-radius: 5px;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(121, 121, 121);
+    position: relative;
+}
+
+.imgUploderBox input {
+    width: 80%;
+    height: 40%;
+}
+
+.imgUploderBox .imgUploadBtn {
+    position: absolute;
+    width: 103%;
+    border-radius: 0;
+    height: 31px;
+    bottom: 0;
+    right: 0px;
+}
+
+.imgUploderBox .imgUploadBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.25;
+}
+
+.imgUploderBox .imgUploaderText:hover {
+    color: #464646;
+}

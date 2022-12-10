@@ -1,0 +1,38 @@
+.notebookColl {
+    /* min-height: calc(100vh - 60px - 180px) !important; */
+    height: max-content !important;
+    /* justify-content: space-between !important; */
+}
+
+.bookArrange {
+    /* background-color: rgba(255, 94, 94, 0.377); */
+    min-height: 68vh;
+    justify-content: center;
+}
+
+.mainContent {}
+
+.notFound {
+    user-select: auto;
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: gray;
+    line-height: 10;
+}
+
+
+/* .mainContent span {
+        position: relative;
+        width: 100%;
+        height: 4px;
+        overflow: visible;
+        background-color: rgba(NaN, 11, 8, 33, 0, 35, 6, 0.2);
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+    
+    .mainContent span span {
+        height: 5px !important;
+} */

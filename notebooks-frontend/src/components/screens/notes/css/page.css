@@ -1,0 +1,217 @@
+.pageBody {
+    position: relative;
+    padding: 5px 5px 35px 5px;
+    margin: 15px;
+    border: 0.4px solid rgb(109, 109, 109);
+    border-top: 5px solid #212529;
+    width: 270px;
+    height: 232px;
+    background-color: #21252957;
+    transition: transform .2s;
+    z-index: 1;
+    box-shadow: 3px 3px 3px 1px rgb(131 131 131);
+}
+
+.pageBody h6 {
+    max-height: 38px;
+    overflow: hidden;
+}
+
+.pageBody:hover {
+    /* text-shadow: 0.3px 0px 0px #000; */
+    filter: drop-shadow(2px 4px 6px rgb(114, 114, 114));
+    z-index: 0;
+    transform: scale(1.023);
+}
+
+.content {
+    overflow: hidden;
+    height: 95.5%;
+}
+
+.updatedDate {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.operations {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+}
+
+.operations .material-icons {
+    color: rgb(92, 88, 88);
+    cursor: pointer;
+}
+
+.operations .material-icons:hover {
+    color: #000;
+}
+
+.modal-content {
+    border: 2px solid #212529 !important;
+}
+
+.operations .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 18px;
+    position: relative;
+    bottom: 4px;
+}
+
+.pageOuter {
+    width: 282px !important;
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    background-color: red;
+    margin: 15px;
+    transition: all 0.5s cubic-bezier(.22, .61, .36, 1);
+    border: 2px solid rgb(194, 194, 194) !important;
+}
+
+.ql-snow {
+    /* font-size: 1.2rem !important; */
+}
+
+.ql-snow .ql-tooltip {
+    margin-top: 0px !important;
+    left: 296.35px !important;
+    top: -111px !important;
+}
+
+.pageOuter .ql-editor {
+    line-height: 1.42;
+    padding: 5px 0px !important;
+}
+
+.ql-container {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1rem;
+}
+
+.pageOuter:hover {
+    border: 2px solid rgb(73, 73, 73) !important;
+    text-shadow: 1px 0 0 black;
+}
+
+.notesArrange {
+    margin: 32px 0 0 3.5rem !important;
+}
+
+.optMenu {
+    right: 8px;
+    bottom: 14px;
+}
+
+.optMenu .material-icons {
+    margin-left: 3px;
+    cursor: pointer;
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.5s cubic-bezier(.22, .61, .36, 1);
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.optMenu .material-icons:hover {
+    opacity: 11;
+}
+
+.costomModal {
+    top: 6% !important;
+    text-shadow: none !important;
+    min-width: 60vw !important;
+    border-radius: 4px;
+    height: 89vh;
+}
+
+.modal-backdrop {
+    filter: blur(1px) !important;
+    background-color: rgb(33, 37, 41);
+    z-index: 11;
+}
+
+
+/* lets try */
+
+.input-box {
+    width: 100%;
+}
+
+.titletoedit {
+    width: 35%;
+}
+
+
+/* lodder */
+
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+
+.loader {
+    color: #000000;
+    font-size: 10px;
+    margin: 80px auto;
+    position: relative;
+    text-indent: -9999 em;
+    transform: translateZ(0);
+    position: absolute;
+    top: -30px;
+    animation-delay: -0.16s;
+    left: 50%;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.loader:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 3.5em;
+}
+
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}
+
+@keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
+}

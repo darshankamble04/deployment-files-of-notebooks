@@ -1,0 +1,113 @@
+/* Create Page */
+
+.dottedpageOuter {
+    transition: all 0.5s cubic-bezier(.22, .61, .36, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer !important;
+    position: relative;
+    padding: 5px 5px 35px 5px;
+    margin: 15px;
+    border: 2px dashed rgb(19, 19, 19);
+    border-top: 5px solid #212529;
+    width: 270px;
+    height: 232px;
+    background-color: rgb(179, 181, 182);
+    transition: transform .2s;
+    z-index: 1;
+    box-shadow: 3px 3px 3px 1px rgb(131 131 131);
+}
+
+.dottedpageOuter:hover {
+    border-top: 5px solid #212529 !important;
+    /* text-shadow: 1px 0 0 black; */
+    filter: drop-shadow(2px 4px 6px rgb(114, 114, 114));
+    transform: scale(1.02);
+}
+
+.dottedpageOuter .center {
+    /* margin-top: 90%; */
+    position: relative;
+    top: 38%;
+}
+
+
+/* Modal */
+
+@keyframes open {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 12%;
+    }
+    50% {
+        width: 24%;
+    }
+    75% {
+        width: 36%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.open {
+    overflow: hidden;
+    display: flex;
+    animation: open 350ms 1 forwards;
+}
+
+.colorBox {
+    background-color: #fde40096;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.colorBox .show {
+    transform: translate3d(57px, -9px, 0px) !important;
+    display: flex;
+}
+
+.colors {
+    width: 36px;
+    height: 36px;
+    margin-right: 3px;
+    /* text-align: center; */
+    border-radius: 3px;
+    border: 1px solid gray;
+    cursor: pointer !important;
+    outline: none;
+    z-index: 1056;
+    border: 1px solid rgb(121, 121, 121);
+    /* box-shadow: inset 0px 0px 12px -1px #8f0202, 0px 0px 12px -1px #75757559; */
+}
+
+.focus {
+    border: 3px solid rgb(124, 0, 0) !important;
+}
+
+
+/* .costomModal textarea {
+    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+    width: 600px;
+    height: 300px;
+    line-height: 25px;
+    padding: 2px 10px;
+    border: solid 1px #ddd;
+} */
+
+.costomModal input:focus,
+.costomModal textarea:focus {
+    /* border: 4px solid red !important; */
+    outline: 4px solid rgb(240, 240, 240) !important;
+}

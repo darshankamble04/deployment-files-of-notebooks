@@ -1,0 +1,38 @@
+.costomAlert {
+    position: absolute;
+    width: 350px;
+    right: 10px;
+    top: 62px;
+    z-index: 3;
+    animation: alert 8s 1 forwards;
+}
+
+@keyframes alert {
+    0% {
+        right: -300px;
+    }
+    20% {
+        right: 12px;
+    }
+    30% {
+        right: 12px;
+    }
+    40% {
+        right: 12px;
+    }
+    50% {
+        right: 12px;
+    }
+    60% {
+        right: 12px;
+    }
+    70% {
+        right: 12px;
+    }
+    80% {
+        right: 12px;
+    }
+    100% {
+        right: -300px;
+    }
+}

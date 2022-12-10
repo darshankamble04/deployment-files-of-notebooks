@@ -1,0 +1,11 @@
+.myFooter {
+    width: 100%;
+    min-height: 90px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--main-bg-color);
+    font-family: 'Poppins', sans-serif;
+}

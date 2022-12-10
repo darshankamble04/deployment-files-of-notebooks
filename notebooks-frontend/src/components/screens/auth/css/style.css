@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+/* html, */
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    /* display: grid; */
+    /* height: 100vh;
+    width: 100%; */
+    place-items: center;
+    /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+}
+
+::selection {
+    background: #ff80bf;
+    background: #c2c2c2d8;
+}
+
+.loginOutline {
+    background: #fff;
+    /* border: 1px solid rgb(226, 226, 226); */
+    /*  */
+    min-width: 560px !important;
+    width: 45vw !important;
+    padding: 10px 28px !important;
+    border-radius: 5px;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); */
+    margin-top: 28px;
+}
+
+.loginOutline a {
+    color: rgb(128, 128, 128);
+    transition: color 300ms ease-in-out;
+}
+
+.loginOutline a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.container form .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container form .title:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+    /* background: linear-gradient(to right, #919191 0%, #cfcfcf 100%); */
+    background: linear-gradient(to right, rgb(34, 27, 27) 0%, #d3d3d3 100%);
+}
+
+.container form .input-box {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.contactUs .description {
+    min-height: 45px !important;
+}
+
+.contactUs .description .underline {
+    bottom: -93px !important;
+}
+
+.border-bottom {
+    border-bottom: 3px solid rgb(202, 202, 202) !important;
+}
+
+.contactUs .description textarea {
+    max-height: 130px;
+    height: 130px;
+    width: 100%;
+    outline: none;
+    user-select: auto;
+    border: none;
+    border-bottom: 3px solid rgb(202, 202, 202) !important;
+}
+
+.container form .input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.underline {
+    position: absolute;
+    height: 3.5px;
+    /* position: relative; */
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.116);
+}
+
+.container form .underline::before {
+    content: '';
+    position: absolute;
+    height: 3.5px;
+    /* position: relative; */
+    bottom: 0px;
+    width: 100%;
+    background: rgba(248, 248, 248, 0.349);
+    /* background: linear-gradient(to right, var(--main-bg-color) 0%, rgba(139, 139, 139, 0.144) 100%); */
+}
+
+.container form .underline::after {
+    content: '';
+    position: absolute;
+    height: 3.5px;
+    width: 100%;
+    /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+    /* background: linear-gradient(to right, #868686 0%, #c4c4c4 100%); */
+    /* background: linear-gradient(to right, #3f3f3f 0%, #d3d3d3 100%); */
+    background: linear-gradient(to right, var(--main-bg-color) 0%, rgba(139, 139, 139, 0.144) 100%);
+    border-radius: 12px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus~.underline::after,
+.container form .input-box textarea:focus~.underline::after,
+.container form .input-box input:valid~.underline::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container form .button {
+    margin: 40px 0 20px 0;
+    width: 45% !important;
+}
+
+.container .input-box input[type="submit"] {
+    /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+    /* background: linear-gradient(to right, #919191 0%, #b8b8b8 100%); */
+    background: linear-gradient(to right, var(--main-bg-color) 0%, #4d4d4d 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    /* background: linear-gradient(to left, #99004d 0%, #ff0080 100%); */
+    /* background: linear-gradient(to right, #b8b8b8 0%, #919191 100%); */
+    background: linear-gradient(to right, #4d4d4d 0%, #000000 100%);
+}
+
+.container .option {
+    font-size: 14px;
+    /* text-align: center; */
+    margin: 30px 0 20px 0;
+}
+
+.container .option2 {
+    font-size: 14px;
+    /* text-align: center; */
+    margin: 15px 0 20px 0;
+}
+
+.container .option3 {
+    font-size: 14px;
+    /* text-align: center; */
+    margin: 1.5rem 0 1.5rem 0;
+    /* float: right; */
+    position: absolute;
+    right: 0px;
+}
+
+.container .google button {
+    height: 45px;
+    width: 100%;
+    padding-left: 20px;
+    line-height: 45px;
+    border-radius: 5px !important;
+    transition: all 0.3s ease;
+}
+
+.google div {
+    background: transparent !important;
+}
+
+.container .google a {
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container .google button {
+    background: linear-gradient(to right, #ffffff 0%, #bbbbbb 100%);
+    background: #fff;
+    box-shadow: none !important;
+    margin: 35px 0 15px 0;
+    border: 1px solid rgb(226, 226, 226) !important;
+}
+
+
+/* .container .google button:hover {
+    opacity: 0.2 !important;
+} */
+
+
+/* .container .google a:hover {
+    background: linear-gradient(to left, #ffffff 0%, #d4d4d4 100%);
+    margin: 35px 0 15px 0;
+} */
+
+.google {
+    width: 45%;
+}
+
+@media screen and (max-width:540px) {
+    .loginOutline form {
+        width: 80vw !important;
+    }
+}
