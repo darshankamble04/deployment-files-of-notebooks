@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.9ef8d5a8.css",
-    "main.js": "/static/js/main.5fc67fda.js",
+    "main.js": "/static/js/main.0d7bbb18.js",
     "static/media/NoteBook Logo VIP.mp4": "/static/media/NoteBook Logo VIP.1484dffb4075783da672.mp4",
     "index.html": "/index.html",
     "static/media/check-alt.svg": "/static/media/check-alt.b71ef56bc6dca569b70f.svg",
     "main.9ef8d5a8.css.map": "/static/css/main.9ef8d5a8.css.map",
-    "main.5fc67fda.js.map": "/static/js/main.5fc67fda.js.map"
+    "main.0d7bbb18.js.map": "/static/js/main.0d7bbb18.js.map"
   },
   "entrypoints": [
     "static/css/main.9ef8d5a8.css",
-    "static/js/main.5fc67fda.js"
+    "static/js/main.0d7bbb18.js"
   ]
 }
